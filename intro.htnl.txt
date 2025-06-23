@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PAEC - Introducción</title>
+    <style>
+        body {
+            background: #CCFF99;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        header h1 {
+            flex-grow: 1;
+        }
+        .layout {
+            display: flex;
+        }
+        nav {
+            background-color: #1b5e20;
+            color: white;
+            width: 200px;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .main {
+            flex-grow: 1;
+            padding: 30px;
+        }
+        .imag-flot {
+            float: left;
+            width: 20%;
+            margin: 10px;
+        }
+.imag-flt {
+            float: right;
+            width: 20%;
+            margin:15px;
+        }
+        .main img {
+            max-width: 15%;
+            margin-top: 10px;
+            
+        }
+      .text{
+           text-align: center;
+           }
+        footer {
+           background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="reciclaje5.jpeg" alt="Logo PAEC">
+        <h1>PAEC - Proyecto</h1>
+    </header>
+
+    <div class="layout">
+        <nav>
+          <a href="inicio.html">Inicio</a>
+        <a href="intro.html">Introducción</a>
+        <a href="noti.html">Noticias</a>
+        <a href="sopa.html">Sopa de Letras</a>        </nav>
+
+        <div class="main">
+            <h2>Introducción</h2>
+             <p><h3>En la era digital en la que vivimos, el avance constante de la tecnología ha traído consigo un problema creciente: la basura electrónica.</h3></p>
+<img scr="reciclaje1.jpg"
+<img src="reciclaje7.jpeg" width="300" height="200">
+<p><h2>Cada año, millones de dispositivos electrónicos quedan obsoletos y terminan desechados de forma inadecuada, afectando gravemente al medio ambiente.
+Este sitio tiene como objetivo crear conciencia sobre la importancia de aplicar la regla de las 3R: Reducir, Reutilizar y Reciclar, enfocada especialmente en el ámbito de la informática.</h2></p>
+           <div class="text">
+<h3>A través de prácticas responsables, todos podemos contribuir a minimizar el impacto ambiental que genera el desecho de computadoras, celulares y otros equipos electrónicos.
+Aquí aprenderás cómo puedes ser parte del cambio, extendiendo la vida útil de tus dispositivos, dándoles una segunda oportunidad y asegurando su correcta disposición.</h3>
+        <img src="reciclaje3.jpg" width="300" height="200">
+</div>
+    </div>
+</div>
+    <footer>
+        
+        <p>lfragoso0322@conalepmex.edu.mx</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>PAEC - juegos</title>
+    <style>
+        body {
+            background: #CCFF99;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        header h1 {
+            flex-grow: 1;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            gap: 2px;
+            margin-bottom: 20px;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            user-select: none;
+        }
+        .selected {
+            background-color: yellow;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .words {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="reciclaje5.jpeg" alt="Logo PAEC">
+        <h1>PAEC - Proyecto</h1>
+    </header>
+
+    <nav>
+          <a href="index.html">Inicio</a>
+        <a href="intro.html">Introducción</a>
+        <a href="noti.html">Noticias</a>
+        <a href="sopa.html">Sopa de Letras</a>    </nav>
+
+    <div class="content">
+        <h2>Sopa de Letras 1</h2>
+        <div class="words">Palabras: AYUDAR, RECICLAJE, REDUCIR, SOFTWARE</div>
+        <div class="grid" id="sopa1"></div>
+       <div style="width: 100%;twxt-alimg: center;">
+ <video width="200" height="250"controls>
+        <source src="video3.mp4" type="video/mp4">
+       
+
+        <div style="width: 100%;twxt-alimg: center;">
+            <video width="200" height="250"controls>
+        <source src="video3.mp4" type="video/mp4">
+
+        </video>
+        <h2>Sopa de Letras 2</h2>
+        <div class="words">Palabras: REUTILIZAR, TECNOLOGÍA, CABLE, MÓDEM</div>
+        <div class="grid" id="sopa2"></div>
+    </div>
+        
+    <footer>
+        <p>jrosales1222@conalepmex.edu.mx</p>
+        <p>mlopez0222@conalepmex.edu.mx</p>
+    </footer>
+
+    <script>
+        function generarSopa(id, letras) {
+            const contenedor = document.getElementById(id);
+            contenedor.innerHTML = '';
+            for (let i = 0; i < letras.length; i++) {
+                for (let j = 0; j < letras[i].length; j++) {
+                    const celda = document.createElement('div');
+                    celda.className = 'cell';
+                    celda.textContent = letras[i][j];
+                    celda.addEventListener('click', () => {
+                        celda.classList.toggle('selected');
+                    });
+                    contenedor.appendChild(celda);
+                }
+            }
+        }
+
+        const sopa1 = [
+            "I N W R M A I C A S T",
+            "X W E E Y U I P A F R",
+            "E C I C L A J E R E M",
+            "L K J H I R R A D D W",
+            "B N M R L A C U U E T",
+            "S A F T W A C V P U D",
+            "Q W E T J I I O U D S",
+            "A S F F R J Y L Ñ L A",
+            "Z O C V A M Q W E R S",
+            "S Y U O P A S D F G J"
+        ].map(row => row.split(' '));
+
+        const sopa2 = [
+            "R E U T I L I Z A R Q R T E",
+            "A S D F G H J K L C W Q W E",
+            "T E I A B N E G I A M V B G",
+            "P O I U Y T C E W Q L L F T",
+            "X Z A A B L E O B N M Q B Z",
+            "Q W E G T Y U I L P L Z S I",
+            "Z X C V E N M Q W A R C F R",
+            "A S D F G H J K L Ñ M F R A",
+            "M O D E M A S D F G H F T Y",
+            "U I O P A S D F G H J C S R"
+        ].map(row => row.split(' '));
+
+        generarSopa('sopa1', sopa1);
+        generarSopa('sopa2', sopa2);
+    </script>
+</body>
+</html>
